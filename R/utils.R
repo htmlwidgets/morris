@@ -46,7 +46,7 @@ fixLayerMorris = function(params_){
     params_$data = dcast(params_$data, fml, value.var = y)
     params_$group = NULL
   }
-  params_ = rename(params_, c("x" = "xkey", "y" = "ykeys"))
+  params_ = plyr::rename(params_, c("x" = "xkey", "y" = "ykeys"))
   params_$labels = as.list(params_$labels %||% params_$y)
   params_$data = to_json(params_$data, orient = "records", json = FALSE)
   params_$ykeys = as.list(params_$ykeys)

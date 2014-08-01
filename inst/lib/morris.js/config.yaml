@@ -12,3 +12,7 @@ dependencies:
     src: "lib/morris.js"
     script: morris.min.js
     style: morris.css
+  - name: jsonfn
+    version: 0.1.0
+    src: "lib/jsonfn"
+    script: jsonfn.js
