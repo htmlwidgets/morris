@@ -7,10 +7,8 @@ This is an experimental R package that provides the [Morris](http://morrisjs.git
 You can install it from github
 
 ```r
-library(devtools)
-install_github('rstudio/htmltools')
-install_github('ramnathv/htmlwidgets')
-install_github('ramnathv/morris')
+pkgs <- c('rstudio/htmltools', 'ramnathv/htmlwidgets', 'ramnathv/morris')
+devtools::install_github(pkgs)
 ```
 
 ### Usage
